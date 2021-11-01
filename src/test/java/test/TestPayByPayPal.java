@@ -1,6 +1,6 @@
 package test;
 
-import FlowerStore.PayByPayPal;
+import Payments.PayByPayPal;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,9 +15,8 @@ public class TestPayByPayPal {
     }
 
     @Test
-    public void testDeliver(){
+    public void testPay(){
         Assert.assertTrue(payment.pay(30));
         Assert.assertFalse(payment.pay(130));
-        //Assert.assertTrue(payment.pay(130));
     }
 }

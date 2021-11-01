@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @AllArgsConstructor
-public class Flower {
+public class Flower extends FlowerItem{
     /*Implement a class Flower or system of classes that implement the essence of
     Rose, Chamomile, Tulip in a flower store. The class or classes should have attributes sepalLength, color, and price.
 Propose an approach to represent flower color. What unexpected behavior default setter could have?
@@ -19,7 +19,7 @@ Send link to your Github here*/
     @Getter @Setter
     protected FlowerType flowerType;
 
-
+    @Override
     public int getPrice(){
         return flowerType.getPrice();
     }

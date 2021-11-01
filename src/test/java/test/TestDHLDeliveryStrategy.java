@@ -1,20 +1,20 @@
 package test;
-import FlowerStore.DHLDeliveryStrategy;
+import Delivery.DHLDeliveryStrategy;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 public class TestDHLDeliveryStrategy {
-    private DHLDeliveryStrategy delivery;
+    private DHLDeliveryStrategy dhldelivery;
 
 
     @Before
     public void init() {
-        delivery = new DHLDeliveryStrategy();
+        dhldelivery = new DHLDeliveryStrategy();
     }
 
     @Test
     public void testDeliver(){
-        Assert.assertEquals(delivery.deliver("Ukraine", "Lviv", "Franka, 2"), "Delivering flowers to Franka, 2, Lviv using DHL Delivery");
+        Assert.assertEquals(dhldelivery.deliver("Ukraine", "Lviv", "Franka, 2"), "Delivering flowers to Franka, 2, Lviv using DHL Delivery");
     }
 }

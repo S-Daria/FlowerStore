@@ -1,10 +1,10 @@
-package FlowerStore;
+package Payments;
 
 import java.util.Scanner;
 
 public class PayByCreditCard implements PayStrategy {
     public Scanner in = new Scanner(System.in);
-    private BankAccount bank_account;
+    private BankAccount bank_account = new BankAccount();
 
     @Override
     public void collectPaymentDetails() {

@@ -1,4 +1,4 @@
-package FlowerStore;
+package Payments;
 
 import java.util.Scanner;
 

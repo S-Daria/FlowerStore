@@ -1,6 +1,6 @@
 package FlowerStore;
 
-public class FlowerBucket {
+public class FlowerBucket extends FlowerItem{
     protected FlowerPack[] flowers;
     protected int price = 0;
 
@@ -17,6 +17,7 @@ public class FlowerBucket {
         this.price = price;
     }
 
+    @Override
     public int getPrice(){
         return this.price;
     }

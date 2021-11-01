@@ -1,4 +1,4 @@
-package FlowerStore;
+package Payments;
 
 public interface PayStrategy {
     boolean pay(double paymentAmount);

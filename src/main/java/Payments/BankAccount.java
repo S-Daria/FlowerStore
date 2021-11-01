@@ -1,4 +1,4 @@
-package FlowerStore;
+package Payments;
 
 public class BankAccount {
     private double current_money;
