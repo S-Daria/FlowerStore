@@ -1,6 +1,6 @@
 package Delivery;
 
 public interface DeliveryStrategy {
-    String deliver(String country, String city, String address);
+    String deliver(FlowerStore.FlowerItem[] items);
     void collectDeliveryDetails();
 }

@@ -9,6 +9,7 @@ public class FlowerBucket extends FlowerItem{
         setPrice(flowers);
     }
 
+
     protected void setPrice(FlowerPack[] flowers){
         int price = 0;
         for (FlowerPack flowerPack: flowers){
