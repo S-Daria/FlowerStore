@@ -1,7 +1,11 @@
 package Delivery;
 
+
+import java.util.List;
+
 import FlowerStore.FlowerItem;
 import Payments.PayByPayPal;
+
 
 
 public class DHLDeliveryStrategy implements DeliveryStrategy{
@@ -11,10 +15,10 @@ public class DHLDeliveryStrategy implements DeliveryStrategy{
     public void collectDeliveryDetails() {
     }
     @Override
-    public String deliver(FlowerStore.FlowerItem[] items) {
+    public String deliver(List<FlowerItem> items) {
         String return_str = "Delivering ";
-        for (FlowerItem el: items){
-            return_str = return_str + el.toString() + " ";
+        for (int i = 0; i < items.size(); i++){
+            return_str = return_str + items.get(i).toString() + " ";
         }
         return_str += "using DHL Delivery";
         return return_str;

@@ -9,6 +9,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class TestPostDeliveryStrategy {
     private PostDeliveryStrategy delivery;
     private Flower rose;
@@ -17,7 +21,7 @@ public class TestPostDeliveryStrategy {
     private FlowerPack roses;
     private FlowerPack tulips;
     private FlowerPack chamomiles;
-    private FlowerStore.FlowerItem[] flowers;
+    private List<FlowerItem> flowers;
 
 
     @Before
@@ -29,7 +33,7 @@ public class TestPostDeliveryStrategy {
         roses = new FlowerPack(rose, 3);
         tulips = new FlowerPack(tulip, 5);
         chamomiles = new FlowerPack(chamomile, 7);
-        flowers = new FlowerItem[]{roses, tulips, chamomiles};
+        flowers = List.of(roses, tulips, chamomiles);
         delivery = new PostDeliveryStrategy();
     }
 
